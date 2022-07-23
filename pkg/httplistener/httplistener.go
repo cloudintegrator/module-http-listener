@@ -7,7 +7,7 @@ import (
 )
 
 type HttpListener struct {
-	Metadata spec.Listener
+	Metadata spec.ListenerSpec
 }
 
 func (listener *HttpListener) Start(ctx *context.Context) {
