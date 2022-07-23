@@ -3,11 +3,11 @@ package httplistener
 import (
 	"context"
 	"fmt"
-	"github.com/cloudintegrator/cloud-integrator/pkg/listener/spec"
+	"github.com/cloudintegrator/module-http-listener/pkg/httplistener/spec"
 )
 
 type HttpListener struct {
-	Metadata spec.ListenerSpec
+	Config spec.HttpListenerConfig `json:"config"`
 }
 
 func (listener *HttpListener) Start(ctx *context.Context) {
